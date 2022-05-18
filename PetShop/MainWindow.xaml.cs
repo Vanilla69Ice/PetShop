@@ -23,7 +23,7 @@ namespace PetShop
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new ZooPage());
+            MainFrame.Navigate(new Resources.ZooPage2());
             Manager.MainFrame = MainFrame;
         }
 
