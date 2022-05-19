@@ -6,37 +6,19 @@
       xmlns:local="clr-namespace:PetShop.Resources"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ZooPage2">
+      Title="ZooPage2" Name="ZooPage">
 
-    <Grid>
+    <Grid DataContext="{Binding ElementName=ZooPage, Path=.}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="377*"/>
+            <RowDefinition Height="73*"/>
         </Grid.RowDefinitions>
-        <ListView Grid.Row="1" Name="LVievZoo">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Grid Margin="20" Width="400">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="70"></RowDefinition>
-                            
-
-
-
-
-
-
-                            </List>
-
-                </DataTemplate>
-
-
-
-
-
-
-            </ListView.ItemTemplate>
-                </DataTemplate>
-
-    </Grid>
+        <DataGrid ItemsSource="{Binding Animals  }" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Visible">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Животные" Binding="{Binding Animal}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Количество" Binding="{Binding Quantiy }" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn Header="Наличие" Binding="{Binding  Availability}" Width="250"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+      </Grid>
 </Page>

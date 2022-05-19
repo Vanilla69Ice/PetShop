@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,8 @@ namespace PetShop.Resources
     /// </summary>
     public partial class ZooPage2 : Page
     {
+        private static readonly Model.DB _db = new Model.DB();
+        public ObservableCollection<Model.Animals> Animals  {get; set; } = new ObservableCollection<Model.Animals>(_db.Animals.ToList());
         public ZooPage2()
         {
             InitializeComponent();

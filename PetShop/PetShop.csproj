@@ -72,6 +72,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Manager.cs" />
+    <Compile Include="Models\DB.cs" />
     <Compile Include="Model\Animals.cs" />
     <Compile Include="Model\DB.cs" />
     <Compile Include="Model\RegularCustomers.cs" />
@@ -138,6 +139,8 @@
   <ItemGroup>
     <Resource Include="Resources\Логотип.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\png-transparent-dog-paw-logo-dog-animals-paw-logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
