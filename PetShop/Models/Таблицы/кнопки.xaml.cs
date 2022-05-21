@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,18 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PetShop.Resources
+namespace PetShop.Models.Таблицы
 {
     /// <summary>
-    /// Логика взаимодействия для ZooPage2.xaml
+    /// Логика взаимодействия для кнопки.xaml
     /// </summary>
-    public partial class ZooPage2 : Page
+    public partial class кнопки : Page
     {
-        private static readonly Model.DB _db = new Model.DB();
-        public ObservableCollection<Model.Animals> Animals  {get; set; } = new ObservableCollection<Model.Animals>(_db.Animals.ToList());
-        public ZooPage2()
+        public кнопки()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PAges.ZooPage());
         }
     }
 }

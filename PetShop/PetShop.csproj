@@ -65,14 +65,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddEditPage.xaml.cs">
-      <DependentUpon>AddEditPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="Models\DB.cs" />
+    <Compile Include="Models\Таблицы\кнопки.xaml.cs">
+      <DependentUpon>кнопки.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model\Animals.cs" />
     <Compile Include="Model\DB.cs" />
     <Compile Include="Model\RegularCustomers.cs" />
@@ -81,24 +81,14 @@
     <Compile Include="Model\Suppliers.cs" />
     <Compile Include="Model\Supplies.cs" />
     <Compile Include="Model\sysdiagrams.cs" />
+    <Compile Include="PAges\ZooPage.xaml.cs">
+      <DependentUpon>ZooPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Regesracia.xaml.cs">
-      <DependentUpon>Regesracia.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ZooPage2.xaml.cs">
-      <DependentUpon>ZooPage2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ZooPage.xaml.cs">
-      <DependentUpon>ZooPage.xaml</DependentUpon>
-    </Compile>
-    <Page Include="AddEditPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -107,15 +97,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Regesracia.xaml">
+    <Page Include="Models\Таблицы\кнопки.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Resources\ZooPage2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ZooPage.xaml">
+    <Page Include="PAges\ZooPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -149,5 +135,6 @@
   <ItemGroup>
     <Resource Include="Resources\png-transparent-dog-paw-logo-dog-animals-paw-logo.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

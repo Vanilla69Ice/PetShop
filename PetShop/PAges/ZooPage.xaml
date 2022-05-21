@@ -1,0 +1,26 @@
+﻿<Page x:Class="PetShop.PAges.ZooPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PetShop.PAges"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ZooPage" Name="ZooPagePage">
+
+    
+        <Grid DataContext="{Binding ElementName=ZooPagePage, Path=.}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="377*"/>
+                <RowDefinition Height="73*"/>
+            </Grid.RowDefinitions>
+            <DataGrid ItemsSource="{Binding Animals  }" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Visible">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Животные" Binding="{Binding Animal}" Width="*"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Количество" Binding="{Binding Quantiy }" Width="150"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Наличие" Binding="{Binding  Availability}" Width="250"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </Grid>
+</Page>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,14 +14,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PetShop
+namespace PetShop.PAges
 {
     /// <summary>
-    /// Логика взаимодействия для AddEditPage.xaml
+    /// Логика взаимодействия для ZooPage.xaml
     /// </summary>
-    public partial class AddEditPage : Page
+    public partial class ZooPage : Page
     {
-        public AddEditPage()
+        private static readonly Model.DB _db = new Model.DB();
+        public ObservableCollection<Model.Animals> Animals { get; set; } = new ObservableCollection<Model.Animals>(_db.Animals.ToList());
+        public ZooPage()
         {
             InitializeComponent();
         }
