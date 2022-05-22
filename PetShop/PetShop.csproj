@@ -81,7 +81,10 @@
     <Compile Include="Model\Suppliers.cs" />
     <Compile Include="Model\Supplies.cs" />
     <Compile Include="Model\sysdiagrams.cs" />
-    <Compile Include="PAges\StaffPage.xaml.cs">
+    <Compile Include="PAges\RegularCustomersPage.xaml.cs">
+      <DependentUpon>RegularCustomersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PAges\StaffPage.cs">
       <DependentUpon>StaffPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="PAges\ZooPage.xaml.cs">
@@ -101,6 +104,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Models\Таблицы\кнопки.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PAges\RegularCustomersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

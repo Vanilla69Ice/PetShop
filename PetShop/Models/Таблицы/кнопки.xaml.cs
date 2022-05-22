@@ -30,9 +30,14 @@ namespace PetShop.Models.Таблицы
             NavigationService.Navigate(new PAges.ZooPage());
         }
 
-        private void Sraff_Click(object sender, RoutedEventArgs e)
+        private void Staff_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new PAges.StaffPage());
+        }
+
+        private void RegularCustomers_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PAges.RegularCustomersPage());
         }
     }
 }

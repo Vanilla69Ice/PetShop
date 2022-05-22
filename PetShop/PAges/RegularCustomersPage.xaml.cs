@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace PetShop.PAges
 {
     /// <summary>
-    /// Логика взаимодействия для StaffPage.xaml
+    /// Логика взаимодействия для RegularCustomersPage.xaml
     /// </summary>
-    public partial class StaffPage : Page
+    public partial class RegularCustomersPage : Page
     {
-        public StaffPage()
+        public RegularCustomersPage()
         {
             InitializeComponent();
         }
