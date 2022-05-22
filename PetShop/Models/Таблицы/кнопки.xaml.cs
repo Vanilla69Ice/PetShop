@@ -27,6 +27,11 @@ namespace PetShop.Models.Таблицы
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            NavigationService.Navigate(new PAges.ZooPage());
+        }
+
+        private void Sraff_Click(object sender, RoutedEventArgs e)
+        {
             NavigationService.Navigate(new PAges.StaffPage());
         }
     }
