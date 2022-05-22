@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:PetShop.PAges"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="RegularCustomersPagePage">
+      Title="RegularCustomersPage" Name="RegularCustomersPagePage">
 
     <Grid DataContext="{Binding ElementName=RegularCustomersPagePage, Path=.}">
         <Grid.RowDefinitions>

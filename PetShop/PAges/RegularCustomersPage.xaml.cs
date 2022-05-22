@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,8 @@ namespace PetShop.PAges
     /// </summary>
     public partial class RegularCustomersPage : Page
     {
+        private static readonly Model.DB _db = new Model.DB();
+        public ObservableCollection<Model.RegularCustomers> RegularCustomers { get; set; } = new ObservableCollection<Model.RegularCustomers>(_db.RegularCustomers.ToList());
         public RegularCustomersPage()
         {
             InitializeComponent();
