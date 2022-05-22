@@ -33,8 +33,6 @@ namespace PetShop.Model
         [StringLength(10)]
         public string NumberPhone { get; set; }
 
-        public byte[] Photo { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Sales> Sales { get; set; }
     }

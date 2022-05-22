@@ -17,7 +17,7 @@ namespace PetShop.Model
         public int id { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(10)]
         public string FullName { get; set; }
 
         [Required]

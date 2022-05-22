@@ -43,6 +43,10 @@ namespace PetShop.Model
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<RegularCustomers>()
+                .Property(e => e.FullName)
+                .IsFixedLength();
+
+            modelBuilder.Entity<RegularCustomers>()
                 .Property(e => e.NumberPhone)
                 .IsFixedLength();
 

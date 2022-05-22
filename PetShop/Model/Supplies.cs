@@ -14,7 +14,6 @@ namespace PetShop.Model
 
         public int Quantity { get; set; }
 
-        [Column(TypeName = "date")]
         public DateTime DateSuplies { get; set; }
 
         public int SuppliersId { get; set; }
