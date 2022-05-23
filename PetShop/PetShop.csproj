@@ -70,6 +70,9 @@
     </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="Models\DB.cs" />
+    <Compile Include="Models\Таблицы\Avtorizacia.xaml.cs">
+      <DependentUpon>Avtorizacia.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Таблицы\кнопки.xaml.cs">
       <DependentUpon>кнопки.xaml</DependentUpon>
     </Compile>
@@ -112,6 +115,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Models\Таблицы\Avtorizacia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Models\Таблицы\кнопки.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

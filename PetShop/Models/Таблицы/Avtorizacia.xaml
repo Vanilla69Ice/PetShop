@@ -1,0 +1,20 @@
+﻿<Page x:Class="PetShop.Models.Таблицы.Avtorizacia"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PetShop.Models.Таблицы"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Avtorizacia">
+
+    <Grid>
+        <Button Content="SignIn" HorizontalAlignment="Left" Margin="288,204,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.465,-0.121" Click="SignIn_Click"/>
+        <Button Content="Registration" HorizontalAlignment="Left" Margin="410,204,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.136,-0.168"/>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="260,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.823,-0.154"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="260,107,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.968,1.899"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="344,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.172,0.796" />
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="23" Margin="344,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Page>

@@ -23,7 +23,7 @@ namespace PetShop
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new Models.Таблицы.кнопки());
+            MainFrame.Navigate(new Models.Таблицы.Avtorizacia());
             Manager.MainFrame = MainFrame;
         }
 
