@@ -39,5 +39,20 @@ namespace PetShop.Models.Таблицы
         {
             NavigationService.Navigate(new PAges.RegularCustomersPage());
         }
+
+        private void Supplies_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PAges.SupliesPage());
+        }
+
+        private void Suppliers_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PAges.SuppliersPage());
+        }
+
+        private void Sales_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PAges.SalesPage());
+        }
     }
 }

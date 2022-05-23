@@ -54,12 +54,6 @@ namespace PetShop.Model
                 .Property(e => e.PurchaseAmount)
                 .HasPrecision(19, 4);
 
-            modelBuilder.Entity<RegularCustomers>()
-                .HasMany(e => e.Sales)
-                .WithRequired(e => e.RegularCustomers)
-                .HasForeignKey(e => e.AnimalId)
-                .WillCascadeOnDelete(false);
-
             modelBuilder.Entity<Staff>()
                 .Property(e => e.Salary)
                 .HasPrecision(19, 4);

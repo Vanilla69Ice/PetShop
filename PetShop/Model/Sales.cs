@@ -16,13 +16,9 @@ namespace PetShop.Model
 
         public int AnimalId { get; set; }
 
-        public int CustomerId { get; set; }
-
         public int StaffId { get; set; }
 
         public virtual Animals Animals { get; set; }
-
-        public virtual RegularCustomers RegularCustomers { get; set; }
 
         public virtual Staff Staff { get; set; }
     }

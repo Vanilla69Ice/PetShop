@@ -84,8 +84,17 @@
     <Compile Include="PAges\RegularCustomersPage.xaml.cs">
       <DependentUpon>RegularCustomersPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PAges\SalesPage.xaml.cs">
+      <DependentUpon>SalesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PAges\StaffPage.cs">
       <DependentUpon>StaffPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PAges\SupliesPage.xaml.cs">
+      <DependentUpon>SupliesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PAges\SuppliersPage.xaml.cs">
+      <DependentUpon>SuppliersPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="PAges\ZooPage.xaml.cs">
       <DependentUpon>ZooPage.xaml</DependentUpon>
@@ -111,7 +120,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PAges\SalesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PAges\StaffPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PAges\SupliesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PAges\SuppliersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

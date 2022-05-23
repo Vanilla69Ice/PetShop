@@ -8,12 +8,6 @@ namespace PetShop.Model
 
     public partial class RegularCustomers
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public RegularCustomers()
-        {
-            Sales = new HashSet<Sales>();
-        }
-
         public int id { get; set; }
 
         [Required]
@@ -26,8 +20,5 @@ namespace PetShop.Model
 
         [Column(TypeName = "money")]
         public decimal PurchaseAmount { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Sales> Sales { get; set; }
     }
 }
